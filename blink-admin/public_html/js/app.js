@@ -25,7 +25,7 @@ function consultarEstado(){
         idCentral: idCentral
     };
 
-    var url = "http://admin.tudomicilio.net/restaurante/consultarEstadoCentral";
+    var url = "http://admin.blinkmanager.com/restaurante/consultarEstadoCentral";
     //var url = "http://192.168.1.33/domicilios/restaurante/updateRegId";
     $.ajax({
         type: "POST",
@@ -68,7 +68,7 @@ function cambiarEstadoCentral(){
         idCentral: idCentral
     };
 
-    var url = "http://admin.tudomicilio.net/restaurante/cambiarEstadoCentral";
+    var url = "http://admin.blinkmanager.com/restaurante/cambiarEstadoCentral";
     //var url = "http://192.168.1.33/domicilios/restaurante/updateRegId";
     $.ajax({
         type: "POST",
@@ -100,7 +100,7 @@ function update() {
         idCentral: idCentral
     };
 
-    var url = "http://admin.tudomicilio.net/restaurante/updateRegIdCentral";
+    var url = "http://admin.blinkmanager.com/restaurante/updateRegIdCentral";
     //var url = "http://192.168.1.33/domicilios/restaurante/updateRegId";
     $.ajax({
         type: "POST",
@@ -128,7 +128,7 @@ function listaMensajeros(){
        idCentral: localStorage.getItem("idCentral")
     };
 
-    var url = "http://admin.tudomicilio.net/restaurante/listarMensajeros";
+    var url = "http://admin.blinkmanager.com/restaurante/listarMensajeros";
     
     $.ajax({
         type: "POST",
@@ -155,9 +155,9 @@ function updateMensajeroDomicilio() {
     };
     
     if (tipo== "domicilio"){
-        var url = "http://admin.tudomicilio.net/restaurante/asignarMensajero";
+        var url = "http://admin.blinkmanager.com/restaurante/asignarMensajero";
     }else{
-        var url = "http://admin.tudomicilio.net/restaurante/asignarMensajeroServicio";
+        var url = "http://admin.blinkmanager.com/restaurante/asignarMensajeroServicio";
     }
     
     $.ajax({
@@ -201,7 +201,7 @@ function cargarPedidios() {
     var data = {
         idCentral: idCentral
     };
-    var url = "http://admin.tudomicilio.net/restaurante/listaDomicilios";
+    var url = "http://admin.blinkmanager.com/restaurante/listaDomicilios";
     //var url = "http://192.168.1.33/domicilios/restaurante/domicilios";
     $.ajax({
         type: "POST",
@@ -311,7 +311,7 @@ function entregado() {
         estado: "e"
     };
     
-    var url = "http://admin.tudomicilio.net/restaurante/cambiarEstadoDomicilio";
+    var url = "http://admin.blinkmanager.com/restaurante/cambiarEstadoDomicilio";
     //var url = "http://192.168.1.33/domicilios/restaurante/cambiarEstadoDomicilio";
     $.ajax({
         type: "POST",
@@ -341,7 +341,7 @@ function aceptar() {
         idCentral: localStorage.getItem("idCentral"),
         estado: "a"
     };
-    var url = "http://admin.tudomicilio.net/restaurante/cambiarEstadoDomicilio";
+    var url = "http://admin.blinkmanager.com/restaurante/cambiarEstadoDomicilio";
     //var url = "http://192.168.1.33/domicilios/restaurante/cambiarEstadoDomicilio";
     $.ajax({
         type: "POST",
@@ -371,7 +371,7 @@ function rechazar() {
         idCentral: localStorage.getItem("idCentral"),
         estado: "n"
     };
-    var url = "http://admin.tudomicilio.net/restaurante/cambiarEstadoDomicilio";
+    var url = "http://admin.blinkmanager.com/restaurante/cambiarEstadoDomicilio";
     //var url = "http://192.168.1.33/domicilios/restaurante/cambiarEstadoDomicilio";
     $.ajax({
         type: "POST",
@@ -401,7 +401,7 @@ function cancelar() {
         idCentral: localStorage.getItem("idCentral"),
         estado: "c"
     };
-    var url = "http://admin.tudomicilio.net/restaurante/cambiarEstadoDomicilio";
+    var url = "http://admin.blinkmanager.com/restaurante/cambiarEstadoDomicilio";
     //var url = "http://192.168.1.33/domicilios/restaurante/cambiarEstadoDomicilio";
     $.ajax({
         type: "POST",
@@ -431,7 +431,7 @@ function listo() {
         estado: "l"
     };
     
-    var url = "http://admin.tudomicilio.net/restaurante/cambiarEstadoDomicilio";
+    var url = "http://admin.blinkmanager.com/restaurante/cambiarEstadoDomicilio";
     //var url = "http://192.168.1.33/domicilios/restaurante/cambiarEstadoDomicilio";
     $.ajax({
         type: "POST",
@@ -462,7 +462,7 @@ function listo2() {
         estado: "l"
     };
     
-    var url = "http://admin.tudomicilio.net/restaurante/cambiarEstadoServicio";
+    var url = "http://admin.blinkmanager.com/restaurante/cambiarEstadoServicio";
     //var url = "http://192.168.1.33/domicilios/restaurante/cambiarEstadoDomicilio";
     $.ajax({
         type: "POST",
@@ -494,7 +494,7 @@ function entregado2() {
         estado: "e"
     };
     
-    var url = "http://admin.tudomicilio.net/restaurante/cambiarEstadoServicio";
+    var url = "http://admin.blinkmanager.com/restaurante/cambiarEstadoServicio";
     //var url = "http://192.168.1.33/domicilios/restaurante/cambiarEstadoDomicilio";
     $.ajax({
         type: "POST",
@@ -523,7 +523,7 @@ function aceptar2() {
         idCentral: localStorage.getItem("idCentral"),
         estado: "a"
     };
-    var url = "http://admin.tudomicilio.net/restaurante/cambiarEstadoServicio";
+    var url = "http://admin.blinkmanager.com/restaurante/cambiarEstadoServicio";
     //var url = "http://192.168.1.33/domicilios/restaurante/cambiarEstadoDomicilio";
     $.ajax({
         type: "POST",
@@ -553,7 +553,7 @@ function rechazar2() {
         idCentral: localStorage.getItem("idCentral"),
         estado: "n"
     };
-    var url = "http://admin.tudomicilio.net/restaurante/cambiarEstadoServicio";
+    var url = "http://admin.blinkmanager.com/restaurante/cambiarEstadoServicio";
     //var url = "http://192.168.1.33/domicilios/restaurante/cambiarEstadoDomicilio";
     $.ajax({
         type: "POST",
@@ -583,7 +583,7 @@ function cancelar2() {
         idCentral: localStorage.getItem("idCentral"),
         estado: "c"
     };
-    var url = "http://admin.tudomicilio.net/restaurante/cambiarEstadoServicio";
+    var url = "http://admin.blinkmanager.com/restaurante/cambiarEstadoServicio";
     //var url = "http://192.168.1.33/domicilios/restaurante/cambiarEstadoDomicilio";
     $.ajax({
         type: "POST",
